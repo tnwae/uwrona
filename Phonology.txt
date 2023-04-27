@@ -1,0 +1,27 @@
+a /a/   a
+b /b/   ba
+c /ts/  tsa
+d /d/   da
+e /e/   e
+g /g/   ga
+h /h/   ha
+i /i/   i
+j /j/   ja
+k /k/   ka
+m /m/   ma
+n /n/   na
+o /o/   o
+p /p/   pa
+r /r/   ra
+s /s/   sa
+t /t/   ta
+u /u/   u
+v /f/   fa
+w /v/   va
+x /x/   xa
+y /ü/   ü
+z /z/   za
+
+/ng/ does not exist as a sound.
+
+Other phonotactic remarks go here

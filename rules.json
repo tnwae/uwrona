@@ -1,0 +1,187 @@
+{
+    "declensionTable": {
+        "nominative": {
+            "rule": "@",
+            "elide": ""
+        },
+        "accusative": {
+            "rule": "VXu",
+            "elide": "j"
+        },
+        "genitive": {
+            "rule": "Vca",
+            "elide": ""
+        },
+        "dative": {
+            "rule": "VXan",
+            "elide": "n"
+        },
+        "ablative": {
+            "rule": "VXum",
+            "elide": "m"
+        },
+        "adessive": {
+            "rule": "VXex",
+            "elide": "x"
+        },
+        "allative": {
+            "rule": "VXo",
+            "elide": "m"
+        },
+        "comitative": {
+            "rule": "Vjna",
+            "elide": "j"
+        },
+        "privative": {
+            "rule": "Vnucce",
+            "elide": "zh"
+        },
+        "causative": {
+            "rule": "Vnoj",
+            "elide": "m"
+        },
+        "reflexive": {
+            "rule": "VXimus",
+            "elide": "c"
+        },
+        "subessive": {
+            "rule": "VCVzhW",
+            "elide": "r"
+        },
+        "superessive": {
+            "rule": "VCVdzW",
+            "elide": "r"
+        },
+        "imitative": {
+            "rule": "VXame",
+            "elide": "w"
+        }
+    },
+    "inflectionTable": {
+        "indicative": {
+            "nonpast": {
+                "infinitive": {
+                    "rule": "@"
+                },
+                "perfective": {
+                    "rule": "Vmet",
+                    "elide": ""
+                },
+                "habitual": {
+                    "rule": "Vmetis",
+                    "elide": ""
+                },
+                "continuous": {
+                    "rule": "Vmetat",
+                    "elide": ""
+                }
+            },
+            "past": {
+                "perfective": {
+                    "rule": "Vnetan",
+                    "elide": ""
+                },
+                "habitual": {
+                    "rule": "Vnetanas",
+                    "elide": ""
+                },
+                "continuous": {
+                    "rule": "Vnetaras",
+                    "elide": ""
+                }
+            }
+        },
+        "conditional": {
+            "nonpast": {
+                "infinitive": {
+                    "rule": "Vkaren"
+                },
+                "perfective": {
+                    "rule": "Vkara",
+                    "elide": ""
+                },
+                "habitual": {
+                    "rule": "Vkaran",
+                    "elide": ""
+                },
+                "continuous": {
+                    "rule": "Vkatam",
+                    "elide": ""
+                }
+            },
+            "past": {
+                "perfective": {
+                    "rule": "Vgarac",
+                    "elide": ""
+                },
+                "habitual": {
+                    "rule": "Vgarace",
+                    "elide": ""
+                },
+                "continuous": {
+                    "rule": "Vgatace",
+                    "elide": ""
+                }
+            }
+        },
+        "potential": {
+            "nonpast": {
+                "infinitive": {
+                    "rule": "Vmaten"
+                },
+                "perfective": {
+                    "rule": "Vmat",
+                    "elide": ""
+                },
+                "habitual": {
+                    "rule": "Vmatis",
+                    "elide": ""
+                },
+                "continuous": {
+                    "rule": "Vmatat",
+                    "elide": ""
+                }
+            },
+            "past": {
+                "perfective": {
+                    "rule": "Vnaman",
+                    "elide": ""
+                },
+                "habitual": {
+                    "rule": "Vnatanas",
+                    "elide": ""
+                },
+                "continuous": {
+                    "rule": "Vnataras",
+                    "elide": ""
+                }
+            }
+        }
+    },
+    "vowelHarmonyRules": {
+        "a": "i",
+        "e": "y",
+        "u": "o",
+        "i": "a",
+        "y": "e",
+        "o": "u"
+    },
+    "voicingRules": {
+        "g": "k",
+        "k": "g",
+        "d": "t",
+        "t": "d",
+        "b": "p",
+        "p": "b",
+        "z": "s",
+        "s": "z",
+        "x": "h",
+        "h": "x",
+        "w": "v",
+        "v": "w",
+        "cc": "zh",
+        "zh": "cc",
+        "c": "cz",
+        "cz": "c"
+    }
+}

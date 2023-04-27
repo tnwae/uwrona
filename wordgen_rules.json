@@ -1,0 +1,124 @@
+{
+    "consonantFrequencies": {
+        "b": 0.02,
+        "c": 0.10,
+        "cc": 0.035,
+        "cz": 0.03,
+        "d": 0.05,
+        "g": 0.03,
+        "h": 0.045,
+        "j": 0.03,
+        "k": 0.03,
+        "m": 0.10,
+        "n": 0.10,
+        "p": 0.02,
+        "r": 0.15,
+        "s": 0.02,
+        "t": 0.08,
+        "v": 0.03,
+        "w": 0.03,
+        "x": 0.045,
+        "z": 0.02,
+        "zh": 0.035
+    },
+    "vowelFrequencies": {
+        "a": 0.3,
+        "e": 0.25,
+        "i": 0.13,
+        "o": 0.13,
+        "u": 0.15,
+        "y": 0.04
+    },
+    "phonemeClasses": {
+        "H": ["i", "u", "y"],
+        "L": ["a", "e", "o"],
+        "V": ["a", "e", "i", "o", "u", "y"],
+        "S": ["b", "cz", "d", "g", "w", "x", "z", "zh"],
+        "W": ["c", "cc", "h", "k", "p", "s", "t", "v"],
+        "R": ["r"],
+        "P": ["j"],
+        "N": ["m", "n"]
+    },
+    "voicingRules": {
+        "g": "k",
+        "k": "g",
+        "d": "t",
+        "t": "d",
+        "b": "p",
+        "p": "b",
+        "z": "s",
+        "s": "z",
+        "x": "h",
+        "h": "x",
+        "w": "v",
+        "v": "w",
+        "cc": "zh",
+        "zh": "cc",
+        "c": "cz",
+        "cz": "c"
+    },
+    "permissibleSyllables": {
+        "WV": 0.125,
+        "SV": 0.125,
+        "RV": 0.1,
+        "PV": 0.05,
+        "NPL": 0.05,
+        "NH": 0.025,
+        "WRV": 0.1,
+        "SRV": 0.1,
+        "WVN": 0.1,
+        "SVN": 0.1,
+        "RVN": 0.1,
+        "PVN": 0.025
+    },
+    "replacementRules": {
+        "nasalVelarsSuck": {
+            "mk": "m",
+            "mg": "m",
+            "nk": "n",
+            "ng": "n"
+        },
+        "degeminateAlmostAllTheConsonants": {
+            "bb": "b",
+            "cccc": "cc",
+            "czcz": "cz",
+            "dd": "d",
+            "gg": "g",
+            "hh": "h",
+            "jj": "j",
+            "kk": "kVk",
+            "mm": "m",
+            "nn": "n",
+            "pp": "p",
+            "rr": "rVr",
+            "ss": "s",
+            "tt": "t",
+            "vv": "v",
+            "ww": "w",
+            "xx": "x",
+            "zz": "z",
+            "zhzh": "zh"
+        },
+        "voicedBilabialsAndDentalAffricatesAreHardToSayTogether": {
+            "mc": "c",
+            "bc": "c"
+        },
+        "noNasalsSideBySide": {
+            "mn": "m",
+            "nm": "n"
+        },
+        "noLongVowels": {
+            "aa": "aj",
+            "ee": "ej",
+            "ii": "ij",
+            "oo": "oj",
+            "uu": "uj",
+            "yy": "yj"
+        },
+        "heyThisIsKindaLikePortuguese": {
+            "nh": "nj",
+            "rh": "rj",
+            "mh": "mj"
+        }
+    }
+}
