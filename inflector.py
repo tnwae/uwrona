@@ -5,7 +5,6 @@ import sys
 from typing import Tuple
 
 action_table = {
-    "W": (lambda v, _: counterparts[v]),
     "V": (lambda v, _: v),
     "C": (lambda _, c: c),
     "X": (lambda _, c: voicings.get(c, c))
@@ -15,7 +14,6 @@ try:
     with open("./rules.json", "r") as fp:
         raw = json.load(fp)
         noun_templates = raw["declensionTable"]
-        counterparts = raw["vowelHarmonyRules"]
         voicings = raw["voicingRules"]
         verb_templates = raw["inflectionTable"]
 except FileNotFoundError as ex:
@@ -150,7 +148,7 @@ def inflect_verb(word: str) -> dict:
         for tense in verb_templates[mood]:
             if tense not in inflections[mood]:
                 inflections[mood][tense] = {}
-
+            
             for aspect in verb_templates[mood][tense]:
                 if aspect not in inflections[mood][tense]:
                     inflections[mood][tense][aspect] = {}
@@ -159,6 +157,9 @@ def inflect_verb(word: str) -> dict:
                     word, verb_templates[mood][tense][aspect]["elide"])
 
                 tmpl = verb_templates[mood][tense][aspect]["rule"]
+                if tmpl == "@":
+                    inflections[mood][tense][aspect] = word
+                    continue
 
                 for ch in tmpl:
                     if ch.isupper():
@@ -214,11 +215,11 @@ Additional markings in their proper order:
         - Neutral: <no marker>
     
     Other aspects:
-        - Obligative - add ge(t)- prefix to the potential
-        - Imperative - add be(t)- prefix to the present indicative
+        - Obligative  - add ĉe(t)- prefix to the potential
+        - Imperative  - add ge(t)- prefix to the present indicative
         - Presumptive - add wu(r)- prefix to the conditional
-        - Imitative - add ren(i)- prefix to the any other aspect
-        - Volitional - add xi(r)- prefix to the potential
+        - Imitative   - add ren(i)- prefix to the any other aspect
+        - Volitional  - add ĵi(r)- prefix to the potential
     
     Interrogative:
         Add the -(i)ka suffix.

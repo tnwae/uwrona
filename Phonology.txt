@@ -1,27 +1,29 @@
 a /a/   a
-b /b/   ba
-c /ts/  tsa
-d /d/   da
+b /b/   be
+c /tʃ/  ce
+d /d/   de
 e /e/   e
-g /g/   ga
-h /h/   ha
+f /f/   fe
+g /g/   ge
+h /h/   he
 i /i/   i
-j /j/   ja
-k /k/   ka
-m /m/   ma
-n /n/   na
+j /dʒ/  je
+k /k/   ke
+m /m/   me
+n /n/   ne
 o /o/   o
-p /p/   pa
-r /r/   ra
-s /s/   sa
-t /t/   ta
+p /p/   pe
+r /r/   re
+s /s/   se
+ŝ /ʃ/   ŝe
+t /t/   te
 u /u/   u
-v /f/   fa
-w /v/   va
-x /x/   xa
-y /ü/   ü
-z /z/   za
+ü /y/   ü
+w /v/   we
+x /x/   xe
+y /j/   ye
+z /z/   ze
+ẑ /ʒ/   ẑe
+ż /dz/  że
 
 /ng/ does not exist as a sound.
-
-Other phonotactic remarks go here

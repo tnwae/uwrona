@@ -6,54 +6,54 @@
         },
         "accusative": {
             "rule": "VXu",
-            "elide": "j"
+            "elide": "n"
         },
         "genitive": {
-            "rule": "Vca",
-            "elide": ""
+            "rule": "VXa",
+            "elide": "n"
         },
         "dative": {
-            "rule": "VXan",
+            "rule": "VXe",
             "elide": "n"
         },
         "ablative": {
             "rule": "VXum",
-            "elide": "m"
+            "elide": "n"
         },
         "adessive": {
             "rule": "VXex",
-            "elide": "x"
+            "elide": "n"
         },
         "allative": {
             "rule": "VXo",
-            "elide": "m"
+            "elide": "n"
         },
         "comitative": {
-            "rule": "Vjna",
-            "elide": "j"
-        },
-        "privative": {
-            "rule": "Vnucce",
-            "elide": "zh"
-        },
-        "causative": {
-            "rule": "Vnoj",
-            "elide": "m"
-        },
-        "reflexive": {
-            "rule": "VXimus",
+            "rule": "VXan",
             "elide": "c"
         },
+        "privative": {
+            "rule": "VXac",
+            "elide": "c"
+        },
+        "causative": {
+            "rule": "VXuy",
+            "elide": "n"
+        },
+        "reflexive": {
+            "rule": "VXime",
+            "elide": "n"
+        },
         "subessive": {
-            "rule": "VCVzhW",
-            "elide": "r"
+            "rule": "VXec",
+            "elide": "ẑ"
         },
         "superessive": {
-            "rule": "VCVdzW",
-            "elide": "r"
+            "rule": "VXoc",
+            "elide": "ŝ"
         },
         "imitative": {
-            "rule": "VXame",
+            "rule": "VXamV",
             "elide": "w"
         }
     },
@@ -61,10 +61,11 @@
         "indicative": {
             "nonpast": {
                 "infinitive": {
-                    "rule": "@"
+                    "rule": "@",
+                    "elide": ""
                 },
                 "perfective": {
-                    "rule": "Vmet",
+                    "rule": "Vmes",
                     "elide": ""
                 },
                 "habitual": {
@@ -72,21 +73,21 @@
                     "elide": ""
                 },
                 "continuous": {
-                    "rule": "Vmetat",
+                    "rule": "Vmetas",
                     "elide": ""
                 }
             },
             "past": {
                 "perfective": {
-                    "rule": "Vnetan",
+                    "rule": "Vneteŝ",
                     "elide": ""
                 },
                 "habitual": {
-                    "rule": "Vnetanas",
+                    "rule": "Vnitaŝ",
                     "elide": ""
                 },
                 "continuous": {
-                    "rule": "Vnetaras",
+                    "rule": "Vnotaŝ",
                     "elide": ""
                 }
             }
@@ -94,32 +95,33 @@
         "conditional": {
             "nonpast": {
                 "infinitive": {
-                    "rule": "Vkaren"
+                    "rule": "VCiken",
+                    "elide": ""
                 },
                 "perfective": {
-                    "rule": "Vkara",
+                    "rule": "Vkis",
                     "elide": ""
                 },
                 "habitual": {
-                    "rule": "Vkaran",
+                    "rule": "Vkitis",
                     "elide": ""
                 },
                 "continuous": {
-                    "rule": "Vkatam",
+                    "rule": "Vkitas",
                     "elide": ""
                 }
             },
             "past": {
                 "perfective": {
-                    "rule": "Vgarac",
+                    "rule": "Vgasec",
                     "elide": ""
                 },
                 "habitual": {
-                    "rule": "Vgarace",
+                    "rule": "Vgisac",
                     "elide": ""
                 },
                 "continuous": {
-                    "rule": "Vgatace",
+                    "rule": "Vgosac",
                     "elide": ""
                 }
             }
@@ -127,44 +129,37 @@
         "potential": {
             "nonpast": {
                 "infinitive": {
-                    "rule": "Vmaten"
+                    "rule": "VCoten",
+                    "elide": ""
                 },
                 "perfective": {
-                    "rule": "Vmat",
+                    "rule": "Vtos",
                     "elide": ""
                 },
                 "habitual": {
-                    "rule": "Vmatis",
+                    "rule": "Vtotis",
                     "elide": ""
                 },
                 "continuous": {
-                    "rule": "Vmatat",
+                    "rule": "Vtotas",
                     "elide": ""
                 }
             },
             "past": {
                 "perfective": {
-                    "rule": "Vnaman",
+                    "rule": "Vdomaŝ",
                     "elide": ""
                 },
                 "habitual": {
-                    "rule": "Vnatanas",
+                    "rule": "Vditaŝ",
                     "elide": ""
                 },
                 "continuous": {
-                    "rule": "Vnataras",
+                    "rule": "Vdotaŝ",
                     "elide": ""
                 }
             }
         }
-    },
-    "vowelHarmonyRules": {
-        "a": "i",
-        "e": "y",
-        "u": "o",
-        "i": "a",
-        "y": "e",
-        "o": "u"
     },
     "voicingRules": {
         "g": "k",
@@ -177,11 +172,11 @@
         "s": "z",
         "x": "h",
         "h": "x",
-        "w": "v",
-        "v": "w",
-        "cc": "zh",
-        "zh": "cc",
-        "c": "cz",
-        "cz": "c"
+        "w": "f",
+        "f": "w",
+        "c": "j",
+        "j": "c",
+        "ŝ": "ẑ",
+        "ẑ": "ŝ"
     }
 }

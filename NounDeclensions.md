@@ -29,6 +29,8 @@ To decline into the accusative:
 
 Indirect object of a verb.  Recipient or beneficiary of an action.  Expresses "to" or "toward" for an animate recipient.  (The allative case is used for inanimate recipients.)
 
+The dative is also used as the object of a preposition for relationships not otherwise specified by a case marker.
+
     Marno curejureciju Buregan urkonemet.
     Marno is giving advice to Burek, or so I heard.
         (konen = to give; jureci = advice, aid, help)
@@ -59,7 +61,7 @@ To decline into the ablative:
 
 "Into" or "toward", in the sense of one action occurring as a prerequsite to another or motion toward an object.  Expresses "before" and "into," and "to" or "toward" for an inanimate recipient.
 
-    Huizum Marnoca ikeno, tut tucamo topanamemo potabarejy havarenetan.
+    Huizum Marnoca ikeno, tut tucamo topanamemo potabareju havarenetan.
     Before leaving Marno's house, she put the laptop in her backpack.
         (iken = to go; topaname = backpack; potabare = laptop computer; havaren = to put)
     
@@ -91,7 +93,7 @@ To decline into the adessive:
 
 ## Causative
 
-"Because of," in the sense that one thing causes another.
+"Because of," in the sense that one thing causes another.  Represents "by" in the sense of a thing being created by someone (the comitative case represents "by" in the sense of a tool used to create something).
 
     Burejna Marnoca gavrenoj, Juren tica huizo ikenetan.
     Because of Marno's conversation with Burek, Juren went to his house.
@@ -103,7 +105,7 @@ To decline into the causative:
 
 ## Genitive
 
-Owner-owned relationship.  Describes the owner of an object or the originator of an action.
+Owner-owned relationship.  Describes the owner of an object or the originator of an action.  Also expresses "about" or "concerning."
 
     Xo, urs huis Marnoca emet xoj.
     (Yes, this is definitely _Marno's_ house.)

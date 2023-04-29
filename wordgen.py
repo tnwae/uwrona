@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+import uwrona_utils as uwrona
 import json
 import numpy as np
 import sys
 import re
+from typing import List
 
 try:
     with open("./wordgen_rules.json") as fp:
@@ -14,6 +16,7 @@ try:
         voicing_rules = raw["voicingRules"]
         syllables = raw["permissibleSyllables"]
         replacement_rules = raw["replacementRules"]
+        syllable_count_probabilities = raw["syllableLengthRules"]
 except Exception as ex:
     print(ex)
     sys.exit(1)
@@ -42,10 +45,11 @@ def compile_char(ch: str) -> str:
     return get_char(ch, vowelp)
 
 
-def make_word(syllable_count: int = 0) -> str:
+def make_word(syllable_count: int = 0, mode: str = "noun") -> List[str]:
     tmpl = ""
     intermediate_word = ""
     final_word = ""
+    results = list()
 
     for i in range(0, syllable_count):
         tmpl += np.random.choice(list(syllables.keys()),
@@ -61,8 +65,22 @@ def make_word(syllable_count: int = 0) -> str:
 
     for ch in intermediate_word:
         final_word += compile_char(ch)
+    
+    if mode == "verb":
+        results.append(final_word)
+        if uwrona.is_vowel(final_word[-1]):
+            inter = get_char(np.random.choice(["S", "W", "R", "P", "N"],
+                                              p=[0.3, 0.3, 0.15, 0.15, 0.1]))
+            results.append(final_word + f"{inter}en")
+        else:
+            inter = voicing_rules.get(final_word[-1], "n")
+            results.append(final_word[:-1] + inter + "en")
+    elif mode == "noun":
+        results.append(final_word)
+    elif mode == "name":
+        results.append(final_word.capitalize())
 
-    return final_word
+    return sorted(results)
 
 
 if __name__ == "__main__":
@@ -74,14 +92,42 @@ if __name__ == "__main__":
                         help="number of words to generate",
                         type=int,
                         default=1)
+    parser.add_argument("-m",
+                        "--max-length",
+                        help="maximum number of syllables",
+                        type=int,
+                        default=-1)
+    parser.add_argument("-M",
+                        "--min-length",
+                        help="minimum number of syllables",
+                        type=int,
+                        default=1)
+    parser.add_argument("-t",
+                        "--type",
+                        help="type of word to generate (noun|name|verb)",
+                        type=str,
+                        default="noun")
     args = parser.parse_args()
 
     count = args.count
+    mode = args.type
+    randomp = (args.max_length == -1)
+    min_length = args.min_length
+    max_length = args.max_length + 1
+    result = set()
 
     for i in range(count):
-        length = np.random.choice(
-            [1, 2, 3, 4, 5, 6, 7, 8],
-            1,
-            p=[0.13, 0.18, 0.44, 0.1, 0.06, 0.04, 0.03, 0.02])
-        count = length[0]
-        print(make_word(count))
+        if randomp:
+            length = np.random.choice(list(range(1, len(syllable_count_probabilities))),
+                                      p=syllable_count_probabilities[1:])
+        else:
+            length = np.random.choice(list(range(min_length, max_length)))
+
+        for word in make_word(length, mode):
+            result.add(word)
+    
+    if mode != "verb":
+        result = [word for word in result if word[-2:] != "en"]
+    
+    for word in sorted(result):
+        print(word)
